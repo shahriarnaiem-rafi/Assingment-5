@@ -19,5 +19,4 @@ function showSelectionBtn(id){
     //show
     document.getElementById(id).classList.remove('hidden');
 
-
 }

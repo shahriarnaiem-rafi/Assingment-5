@@ -19,14 +19,23 @@ document.getElementById('donate-btn')
         const p = document.createElement('p');
         p.classList.add('bg-green-200');
         p.innerHTML = `
-           <h4 class="text-2xl">Donated Amount</h4>
-           <p>${inputAmount}BDT Added .. New balance ${newBalance} </p>
+            <div style="margin:10px 300px 10px 300px;" >
+           <h4 class="text-5xl">Donated Amount</h4>
+           <p class="text-3xl">${inputAmount} BDT Added .. New balance ${newBalance} BDT </p>
+           </div>
 
     `
-       document.getElementById('transection-container').appendChild(p);
-
-
-
-
+        document.getElementById('transection-container').appendChild(p);
     })
-    
+
+
+
+
+
+// home back 
+document.getElementById('home').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = '/index.html';
+
+
+})
