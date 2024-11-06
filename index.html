@@ -13,7 +13,8 @@
 
 
     <main>
-        <div id="card-container">
+
+        <div id="Mynav">
             <!-- Nav var -->
             <div class="navbar bg-slate-100 min-h-24">
                 <div class="navbar-start">
@@ -24,15 +25,23 @@
                     <a class="btn btn-ghost text-xl"><img src="./assets/logo.png" alt="">Donate Bangladesh</a>
                 </div>
                 <div class="navbar-end mr-5">
-                    <a class="btn btn-ghost text-xl"><img src="./assets/coin.png" alt=""><span id="home-balance">55000</span>BDT</a>
+                    <a class="btn btn-ghost text-xl"><img src="./assets/coin.png" alt=""><span
+                            id="home-balance">55000</span>BDT</a>
                 </div>
             </div><br>
             <br>
 
             <div class="flex justify-center gap-5">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]" id="donation-btn">Donation</button>
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="transection-history">History</button>
             </div>
+
+            <div class="divider"></div>
+        </div>
+
+
+
+        <div id="card-container">
 
 
             <!-- card part  -->
@@ -73,21 +82,10 @@
         <!-- History -->
 
         <div id="transection-container" class="hidden">
-            
-            <div class="navbar bg-slate-100 min-h-24" >
-                <div class="navbar-start">
-                    <button class="btn text-2xl mx-20 bg-[#B4F461]" id="home">Home</button>
-                </div>
 
-                <div class="navbar-center">
-                    <a class="btn btn-ghost text-xl"><img src="./assets/logo.png" alt="">Donate Bangladesh</a>
-                </div>
-                <div class="navbar-end mr-5">
-                    <a class="btn btn-ghost text-xl"><img src="./assets/coin.png" alt=""><span>5500</span>BDT</a>
-                </div>
-            </div><br>
+
             <h4 class="text-5xl font-bold bg-gray-100 text-center">Transection History</h4>
-            
+
 
 
         </div>

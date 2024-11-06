@@ -15,6 +15,10 @@ document.getElementById('donate-btn')
             return;
             
         }
+        if(inputAmount>homeBalance){
+            alert("you dont have that much  money");
+            return;
+        }
 
         const cardBalance = getFieldValueById('card-balance');
         const newBalance = inputAmount + cardBalance;
@@ -24,34 +28,34 @@ document.getElementById('donate-btn')
         
         const finalHomeBalance=homeBalance-inputAmount;
         document.getElementById('home-balance').innerText = finalHomeBalance;
+        
+
        
 
         const p = document.createElement('p');
       //  p.classList.add('bg-green-100');
         p.innerHTML = `
-            <div style="margin:10px 300px 10px 300px; " >
+
+            <div style="margin:10px 300px 10px 300px; border:2px solid gray; padding:40px;  "  >
            <h4 class="text-5xl">Donated Amount</h4>
-           <p class="text-3xl bg-green-100">${inputAmount} BDT Added .. New balance ${newBalance} BDT    <br> Final Home Balance <span class="text-5xl;">${finalHomeBalance} BDT</span></p>
+           <p class="text-3xl bg-green-100">${inputAmount} Taka is Donated for famine-2024 at Feni, Bangladesh. </p>
+           <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
            </div>
 
     `
         document.getElementById('transection-container').appendChild(p);
-
+        
+        
 
     });
 
 
-   
 
 
+// // home back 
+// document.getElementById('home').addEventListener('click', function (event) {
+//     event.preventDefault();
+//     window.location.href = '/index.html';
 
 
-
-
-// home back 
-document.getElementById('home').addEventListener('click', function (event) {
-    event.preventDefault();
-    window.location.href = '/index.html';
-
-
-})
+// })
