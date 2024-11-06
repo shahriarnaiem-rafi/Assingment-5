@@ -50,12 +50,16 @@ document.getElementById('donate-btn')
     });
 
 
+    document.getElementById('button-blog').addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = '/blog.html';
+
+    })
+
+// home back 
+document.getElementById('home-2').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = '/index.html';
 
 
-// // home back 
-// document.getElementById('home').addEventListener('click', function (event) {
-//     event.preventDefault();
-//     window.location.href = '/index.html';
-
-
-// })
+})
