@@ -50,6 +50,6 @@ document.getElementById('donate-btn')
 
     document.getElementById('button-blog').addEventListener('click', function (event) {
         event.preventDefault();
-        window.location.href = '/index2.html';
+        window.location.href = '/blog/index.html';
 
     });
