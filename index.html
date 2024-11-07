@@ -17,8 +17,8 @@
 
         <div id="Mynav">
             <!-- Nav var -->
-            <div class="navbar bg-slate-100 min-h-24">
-                <div class="navbar-start">
+            <div class="navbar bg-slate-100 min-h-24 ">
+                <div class="md:navbar-start ">
                     <button class="btn text-2xl mx-20 bg-[#B4F461]" id="button-blog">Blog</button>
 
                 </div>
@@ -45,11 +45,9 @@
 
 
         <div id="card-container">
-
-
             <!-- card part  -->
             <div style="margin:10px 300px 10px 300px;" class="border rounded-md">
-                <div class="hero ">
+                <div class="hero  ">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="text-center lg:text-left">
 
@@ -79,19 +77,19 @@
                                     onclick="my_modal_1.showModal()">Donate Now</button>
                                 <dialog id="my_modal_1" class="modal">
                                     <div class="modal-box">
-                                        <h3 class="text-5xl font-bold text-center">Congrats!</h3>
+                                        <h3 class="text-5xl font-bold text-center">Congrats! </h3>
                                     
 
-                                        <p class="py-4 text-center">
-                                            <img src="./assets/coin.png" alt="">
-                                            <br>
-                                            You have donated </p>
+                                        <p class="py-4 text-center"><img src="./assets/coin.png" alt="" style=" display: inline;"> <br>
+                                             
+                                            
+                                            You have donated for Humankind</p>
                                         <p class="py-4 text-center">Successfull </p>
 
-                                        <div class="modal-action">
+                                        <div class="modal-action " style="display: flex; justify-content: center;">
                                             <form method="dialog">
                                                 <!-- if there is a button in form, it will close the modal -->
-                                                <button class="btn">Close Confirmation</button>
+                                                <button class="btn ">Close Confirmation</button>
                                             </form>
                                         </div>
                                     </div>
@@ -106,6 +104,8 @@
 
             </div>
         </div>
+        <br>
+        
         <!-- History -->
 
         <div id="transection-container" class="hidden">
@@ -126,6 +126,7 @@
     <script src="./js/cashout.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/showable.js"></script>
+    <script src="./js/back.js"></script>
 
 </body>
 

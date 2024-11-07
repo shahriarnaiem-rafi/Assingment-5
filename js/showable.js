@@ -8,6 +8,4 @@ document.getElementById('donation-btn').addEventListener("click", function(){
     showSelectionBtn('card-container');
     document.getElementById('donation-btn').classList.add('bg-[#B4F461]');
     document.getElementById('transection-history').classList.remove('bg-[#B4F461]');
-    
-
-})
+});
